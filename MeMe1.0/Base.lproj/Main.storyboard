@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCy-be-0RG">
-                                <rect key="frame" x="0.0" y="761" width="453" height="44"/>
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
                                 <items>
                                     <barButtonItem title="Pick" id="RLA-9A-ne4">
                                         <connections>
@@ -31,6 +31,24 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="05E-Gp-29Z">
                                 <rect key="frame" x="67" y="186" width="279" height="229"/>
                             </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1M6-6h-PG8">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Share" id="AY5-7b-3i6">
+                                        <connections>
+                                            <action selector="shareMeme:" destination="BYZ-38-t0r" id="eMg-5T-OL3"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="vzk-iy-WQk"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="ffo-5e-7yr"/>
+                                    <barButtonItem title="Cancel" id="NDx-qi-9uz">
+                                        <connections>
+                                            <action selector="cancel:" destination="BYZ-38-t0r" id="Mcw-7X-ull"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -45,6 +63,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="cancel" destination="NDx-qi-9uz" id="yD5-DK-FEJ"/>
                         <outlet property="imageViewPicker" destination="05E-Gp-29Z" id="UHZ-Fq-KCW"/>
                     </connections>
                 </viewController>

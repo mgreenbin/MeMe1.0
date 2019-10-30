@@ -12,6 +12,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
    @IBOutlet weak var imageViewPicker: UIImageView!
     
+    @IBOutlet weak var cancel: UIBarButtonItem!
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
@@ -29,6 +31,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func pickAnImage(_ sender: Any) {
+        cancel.isEnabled = true
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = .photoLibrary
@@ -37,5 +40,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     
+    
+    @IBAction func shareMeme(_ sender: Any) {
+        
+    }
+    
+    @IBAction func cancel(_ sender: Any) {
+        imageViewPicker.image = nil
+        cancel.isEnabled = false
+        
+    }
 }
 
