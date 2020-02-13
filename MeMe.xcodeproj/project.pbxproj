@@ -17,7 +17,7 @@
 
 /* Begin PBXFileReference section */
 		4D4D393F2363943400804732 /* PickImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickImage.swift; sourceTree = "<group>"; };
-		4D8FFCFB2331876F00D0E383 /* MeMe1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeMe1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D8FFCFB2331876F00D0E383 /* MeMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8FFCFE2331876F00D0E383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D8FFD002331876F00D0E383 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D8FFD032331876F00D0E383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		4D8FFCF22331876F00D0E383 = {
 			isa = PBXGroup;
 			children = (
-				4D8FFCFD2331876F00D0E383 /* MeMe1.0 */,
+				4D8FFCFD2331876F00D0E383 /* MeMe */,
 				4D8FFCFC2331876F00D0E383 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		4D8FFCFC2331876F00D0E383 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4D8FFCFB2331876F00D0E383 /* MeMe1.0.app */,
+				4D8FFCFB2331876F00D0E383 /* MeMe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4D8FFCFD2331876F00D0E383 /* MeMe1.0 */ = {
+		4D8FFCFD2331876F00D0E383 /* MeMe */ = {
 			isa = PBXGroup;
 			children = (
 				4D8FFCFE2331876F00D0E383 /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				4D8FFD072331877100D0E383 /* LaunchScreen.storyboard */,
 				4D8FFD0A2331877100D0E383 /* Info.plist */,
 			);
-			path = MeMe1.0;
+			path = MeMe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4D8FFCFA2331876F00D0E383 /* MeMe1.0 */ = {
+		4D8FFCFA2331876F00D0E383 /* MeMe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D8FFD0D2331877100D0E383 /* Build configuration list for PBXNativeTarget "MeMe1.0" */;
+			buildConfigurationList = 4D8FFD0D2331877100D0E383 /* Build configuration list for PBXNativeTarget "MeMe" */;
 			buildPhases = (
 				4D8FFCF72331876F00D0E383 /* Sources */,
 				4D8FFCF82331876F00D0E383 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = MeMe1.0;
+			name = MeMe;
 			productName = MeMe1.0;
-			productReference = 4D8FFCFB2331876F00D0E383 /* MeMe1.0.app */;
+			productReference = 4D8FFCFB2331876F00D0E383 /* MeMe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4D8FFCF62331876F00D0E383 /* Build configuration list for PBXProject "MeMe1.0" */;
+			buildConfigurationList = 4D8FFCF62331876F00D0E383 /* Build configuration list for PBXProject "MeMe" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4D8FFCFA2331876F00D0E383 /* MeMe1.0 */,
+				4D8FFCFA2331876F00D0E383 /* MeMe */,
 			);
 		};
 /* End PBXProject section */
@@ -288,12 +288,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J38PAYQ7MK;
-				INFOPLIST_FILE = MeMe1.0/Info.plist;
+				INFOPLIST_FILE = MeMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "net.Mark-Greenberg.MeMe1-0";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Mark-Greenberg.MeMe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,12 +306,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J38PAYQ7MK;
-				INFOPLIST_FILE = MeMe1.0/Info.plist;
+				INFOPLIST_FILE = MeMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "net.Mark-Greenberg.MeMe1-0";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Mark-Greenberg.MeMe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,7 +321,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4D8FFCF62331876F00D0E383 /* Build configuration list for PBXProject "MeMe1.0" */ = {
+		4D8FFCF62331876F00D0E383 /* Build configuration list for PBXProject "MeMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4D8FFD0B2331877100D0E383 /* Debug */,
@@ -330,7 +330,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D8FFD0D2331877100D0E383 /* Build configuration list for PBXNativeTarget "MeMe1.0" */ = {
+		4D8FFD0D2331877100D0E383 /* Build configuration list for PBXNativeTarget "MeMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4D8FFD0E2331877100D0E383 /* Debug */,
