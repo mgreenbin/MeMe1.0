@@ -11,7 +11,8 @@ import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-   @IBOutlet weak var imageViewPicker: UIImageView!
+    @IBOutlet weak var cameraButton: UIBarButtonItem!
+    @IBOutlet weak var imageViewPicker: UIImageView!
     
     @IBOutlet weak var cancel: UIBarButtonItem!
     
@@ -27,23 +28,44 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        super.viewDidLoad()        
+        
+        
     }
     
-    @IBAction func pickAnImage(_ sender: Any) {
-        cancel.isEnabled = true
+    override func viewWillAppear(_ animated: Bool) {
+        // Disable pickCameraImage button if camera not available
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera)
+        {
+            cameraButton.isEnabled = false
+        }
+    }
+    
+    
+    @IBAction func pickImageUsingCamera(_ sender: Any) {
+       
+        pickAnImage(UIImagePickerController.SourceType.camera)
+        
+    }
+    
+    
+    @IBAction func pickImageFromAlbum(_ sender: UIBarButtonItem) {
+        pickAnImage(UIImagePickerController.SourceType.photoLibrary)
+    }
+    
+    func pickAnImage(_ source: UIImagePickerController.SourceType)
+    {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
-        imagePicker.sourceType = .photoLibrary
-        imagePicker.allowsEditing = false
+        imagePicker.sourceType = source
+        //imagePicker.allowsEditing = false
         present(imagePicker, animated: true, completion: nil)
-        
     }
     
-    
     @IBAction func shareMeme(_ sender: Any) {
-        
+      
+        let vc = UIActivityViewController(activityItems: [imageViewPicker.image!], applicationActivities: [])
+        present(vc, animated: true)
     }
     
     @IBAction func cancel(_ sender: Any) {
